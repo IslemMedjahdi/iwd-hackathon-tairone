@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, Image, Pressable } from "react-native";
 
-export default function Card({ name, desc, icon, hour }) {
+export default function Card({ name, desc, icon, hour,navigation }) {
   return (
     <View
       style={{
@@ -13,8 +13,9 @@ export default function Card({ name, desc, icon, hour }) {
       }}
     >
       <Pressable
-        android_ripple={{ color: "#B7B7B750" }}
+        android_ripple={{ color: "#A6173740" }}
         style={{ padding: 15 }}
+        onPress= {() => navigation.push("Chat")}
       >
         <View
           style={{
