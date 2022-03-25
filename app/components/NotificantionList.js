@@ -83,7 +83,7 @@ const DATA = [
   },
 ];
 
-export default function NotificantionList() {
+export default function NotificantionList({navigation}) {
   const [notifications, setNotifications] = useState(DATA);
   return (
     <SectionList
@@ -91,7 +91,7 @@ export default function NotificantionList() {
       showsVerticalScrollIndicator={false}
       keyExtractor={(item, index) => index.toString()}
       sections={notifications}
-      renderItem={({ item }) => <Card {...item} />}
+      renderItem={({ item }) => <Card navigation={navigation} {...item} />}
       renderSectionHeader={({ section }) => (
         <View>
           <Text style={{ fontWeight: "bold", fontSize: 15, marginTop: 15 }}>

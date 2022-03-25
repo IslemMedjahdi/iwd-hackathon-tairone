@@ -5,7 +5,7 @@ import Filter from "../components/Filter";
 import Header from "../components/Header";
 import NotificantionList from "../components/NotificantionList";
 
-export default function Notification() {
+export default function Notification({navigation}) {
   return (
     <SafeAreaView>
       <View style={{ backgroundColor: "white", height: "100%" }}>
@@ -13,7 +13,7 @@ export default function Notification() {
         <View style={{ padding: 20 }}>
           <Filter />
         </View>
-        <NotificantionList />
+        <NotificantionList navigation={navigation} />
       </View>
     </SafeAreaView>
   );

@@ -12,7 +12,7 @@ export default function Filter() {
     >
       <View
         style={{
-          borderColor: "#4AA8BB",
+          borderColor: "#A61737",
           borderWidth: 2,
           borderRadius: 20,
           overflow: "hidden",
@@ -23,9 +23,9 @@ export default function Filter() {
             paddingVertical: 4,
             paddingHorizontal: 35,
           }}
-          android_ripple={{ color: "#4AA8BB" }}
+          android_ripple={{ color: "#A61737" }}
         >
-          <Text style={{ color: "#4AA8BB", fontSize: 16, fontWeight: "bold" }}>
+          <Text style={{ color: "#A61737", fontSize: 16, fontWeight: "bold" }}>
             Tout
           </Text>
         </Pressable>

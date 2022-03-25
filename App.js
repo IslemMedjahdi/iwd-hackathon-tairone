@@ -25,9 +25,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ header: () => null }}>
-        <Stack.Screen name="Suggetions" component={Suggestions} />
-        <Stack.Screen name="Chat" component={Chat} />
         <Stack.Screen name="Notification" component={Notification} />
+        <Stack.Screen name="Chat" component={Chat} />
+        <Stack.Screen name="Suggetions" component={Suggestions} />
+      
       </Stack.Navigator>
     </NavigationContainer>
   );
