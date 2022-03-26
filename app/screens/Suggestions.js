@@ -19,10 +19,10 @@ export default function Suggestions({navigation}) {
                     <Text style={{ color: "#A1A4B2", fontSize: 18, fontWeight: '100', marginBottom: 0 }}>Choisir une action: </Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} style={{ paddingHorizontal: 20, paddingBottom: 20, }}>
-                    <Action textColor={"#4E5567"} desc={"Hello i'm islem medjahdi, I'm a 2nd year student at ESI algiers, lorem ipsum blabla"} name={"Divertissement"} color={"#FFCF86"} image={require("../../assets/Frame.png")} />
-                    <Action textColor={"white"} desc={"Hello i'm islem medjahdi, I'm a 2nd year student at ESI algiers, lorem ipsum blabla"} name={"Meditier"} color={"#AEB4FC"} image={require("../../assets/Frame3.png")} />
-                    <Action textColor={"white"} desc={"Hello i'm islem medjahdi, I'm a 2nd year student at ESI algiers, lorem ipsum blabla"} name={"Bouger"} color={"#A2E0C1"} image={require("../../assets/Frame2.png")} />
-                    <Action textColor={"white"} desc={"Hello i'm islem medjahdi, I'm a 2nd year student at ESI algiers, lorem ipsum blabla"} name={"Reposer"} color={"#4E5567"} image={require("../../assets/Frame1.png")} />
+                    <Action textColor={"#4E5567"} desc={"Recommandations de films et de vidéos adaptées à vous."} name={"Divertissement"} color={"#FFCF86"} image={require("../../assets/Frame.png")} />
+                    <Action textColor={"white"} desc={"Respirez profondemment avec notre guide de meditation."} name={"Mediter"} color={"#AEB4FC"} image={require("../../assets/Frame3.png")} />
+                    <Action textColor={"white"} desc={"Profitez pleinement de notre programme de sport, conçu par des experts."} name={"Bouger"} color={"#A2E0C1"} image={require("../../assets/Frame2.png")} />
+                    <Action textColor={"white"} desc={"Profitez pleinement de notre séléction de musique douce ainsi que tout ce qui pourra vous reposer."} name={"Reposer"} color={"#4E5567"} image={require("../../assets/Frame1.png")} />
                 </ScrollView>
             </View>
         </SafeAreaView>
