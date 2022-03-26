@@ -2,8 +2,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 //screens
-import Home from "./app/screens/Home";
-import About from "./app/screens/About";
+import Suggestions from "./app/screens/Suggestions";
+import Notification from "./app/screens/Notification";
+import Chat from "./app/screens/Chat";
+
 
 //redux
 //import { Provider } from "react-redux";
@@ -16,9 +18,6 @@ import { db } from "./firebase-config";
 import { getDocs, collection } from "firebase/firestore/lite";
 
 import { useEffect, useState } from "react";
-import Notification from "./app/screens/Notification";
-import Chat from "./app/screens/Chat";
-import Suggestions from "./app/screens/Suggestions";
 export default function App() {
 
 

@@ -4,80 +4,80 @@ import Card from "./Card";
 
 const DATA = [
   {
-    title: "27 mars 2022",
+    title: "26 mars 2022",
     data: [
       {
         id: 1,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old. I'm a developer :D",
-        hour: "PM 10:48",
+        desc: "Vous semblez triste, est-il le cas?",
+        hour: "12:48",
       },
       {
         id: 2,
-        name: "Téléviseur",
-        icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        name: "Machine à laver",
+        icon: require("../../assets/wash.png"),
+        desc: "Opération achevée!",
+        hour: "9:45",
       },
       {
         id: 3,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        desc: "Recommandations de series télé ",
+        hour: "7:10",
       },
     ],
   },
   {
-    title: "27 mars 2022",
+    title: "25 mars 2022",
     data: [
       {
-        id: 1,
-        name: "Téléviseur",
-        icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        id: 4,
+        name: "Machine à laver",
+        icon: require("../../assets/wash.png"),
+        desc: "Opération achevée!",
+        hour: "8:45",
       },
       {
-        id: 2,
+        id: 5,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        desc: "Recommandations de series télé",
+        hour: "7:48",
       },
       {
-        id: 3,
+        id: 6,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        desc: "Vous semblez heureux, pouvez-vous le confirmer? :D",
+        hour: "7:40",
       },
     ],
   },
   {
-    title: "27 mars 2025",
+    title: "23 mars 2022",
     data: [
       {
-        id: 1,
+        id: 7,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        desc: "Vous semblez triste, est-il le cas?",
+        hour: "10:48",
       },
       {
-        id: 2,
-        name: "Téléviseur",
-        icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        id: 8,
+        name: "Machine à laver",
+        icon: require("../../assets/wash.png"),
+        desc: "Opération achevée!",
+        hour: "9:45",
       },
       {
-        id: 3,
+        id: 9,
         name: "Téléviseur",
         icon: require("../../assets/tv.png"),
-        desc: "Hello i'm islem medjahdi I'm 19 years Old",
-        hour: "PM 10:48",
+        desc: "Recommandations de series télé ",
+        hour: "7:10",
       },
     ],
   },
@@ -91,7 +91,7 @@ export default function NotificantionList({navigation}) {
       showsVerticalScrollIndicator={false}
       keyExtractor={(item, index) => index.toString()}
       sections={notifications}
-      renderItem={({ item }) => <Card navigation={navigation} {...item} />}
+      renderItem={({ item,index }) => <Card navigation={navigation} {...item}  />}
       renderSectionHeader={({ section }) => (
         <View>
           <Text style={{ fontWeight: "bold", fontSize: 15, marginTop: 15 }}>
